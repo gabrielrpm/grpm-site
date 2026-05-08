@@ -1,8 +1,16 @@
 @AGENTS.md
 
-# Template Landing Page
+# Site Institucional GRPM Web Marketing
 
-Template profissional e neutro para agências web. Adaptável para qualquer segmento.
+Site institucional da GRPM Web Marketing — agência de criação de sites e presença digital.
+
+## Projeto
+
+- **Empresa**: GRPM Web Marketing
+- **Tipo**: Site institucional / Landing page
+- **Idioma**: Português do Brasil
+- **Hospedagem**: Vercel
+- **Contato WhatsApp**: +5535999222073
 
 ## Estrutura
 
@@ -17,53 +25,40 @@ Template profissional e neutro para agências web. Adaptável para qualquer segm
 │   ├── FAQ.tsx           # Accordion perguntas frequentes
 │   ├── StatsCounter.tsx  # Contador de números
 │   ├── CookieBanner.tsx  # Banner LGPD
-│   ├── FloatingWhatsApp.tsx # Botão fixo WhatsApp
+│   ├── FloatingWhatsApp.tsx # Botão fixo WhatsApp (+5535999222073)
 │   ├── ContactForm.tsx   # Formulário com validação
 │   ├── Map.tsx           # Google Maps embed
 │   └── Partners.tsx      # Logos parceiros/clientes
 ├── public/
-│   └── logo.svg          # Logo placeholder
-├── CUSTOMIZE.md          # Guia de customização
+│   └── logo.svg          # Logo GRPM
 └── package.json
 ```
 
 ## Seções da Landing Page
 
-1. **Header**: Logo + Menu de navegação
+1. **Header**: Logo GRPM + Menu de navegação
 2. **Hero**: Título, subtítulo, CTA
-3. **Sobre**: Apresentação da empresa
-4. **Serviços**: 3 cards de serviços
-5. **Depoimentos**: 2 cards de clientes
+3. **Sobre**: Apresentação da GRPM Web Marketing
+4. **Serviços**: Cards de serviços (criação de sites, presença digital)
+5. **Depoimentos**: Cards de clientes
 6. **Contato**: Botão WhatsApp + Formulário
-7. **Footer**: Redes sociais + endereço
+7. **Footer**: Redes sociais + informações
 
-## Customização
-
-Todas as instruções de customização estão em `CUSTOMIZE.md`.
-
-### Imagens do Unsplash
-
-**INSTRUÇÃO PARA CLAUDE**: Ao customizar este template para um novo cliente:
-1. Buscar imagens relevantes no Unsplash de acordo com o segmento/nicho do cliente
-2. Substituir automaticamente a URL da imagem no Hero Section (app/page.tsx)
-3. Usar sempre next/image com os domínios já configurados no next.config.ts
-4. As imagens devem ter resolução mínima de 1920px de largura
-5. Priorizar imagens profissionais, neutras e de alta qualidade
+## Design System
 
 ### Cores
 
-Paleta neutra padrão:
-- Primária: `#000000` (preto)
-- Secundária: `#FFFFFF` (branco)
-- Cinza: `#71717A` (zinc-500)
-- Fundo: `#FAFAFA` (zinc-50)
+- **Primária**: `#FF6B00` (laranja GRPM)
+- **Fundo**: `#121212` (dark)
+- **Texto**: `#FFFFFF` (branco) e tons de cinza
+- **Acento**: Variações do laranja principal
 
-Para trocar: editar variáveis em `app/globals.css`
+Para editar: `app/globals.css`
 
 ### Tipografia
 
-- Sans: Geist Sans (Google Fonts)
-- Mono: Geist Mono (Google Fonts)
+- Sans: Geist Sans
+- Mono: Geist Mono
 
 ### Responsividade
 
@@ -75,7 +70,15 @@ Mobile-first com breakpoints:
 
 ## Stack
 
-- Next.js 15
-- React 19
-- TypeScript
-- Tailwind CSS
+- **Next.js 15** (App Router)
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
+
+## Padrões de Desenvolvimento
+
+1. **Server Components por padrão**: Usar React Server Components sempre que possível
+2. **Client Components**: Apenas quando necessário ('use client' explícito)
+3. **Mobile-first**: Design e desenvolvimento começam mobile
+4. **Sem dependências desnecessárias**: Evitar adicionar libs sem necessidade real
+5. **Idioma**: Todo conteúdo em português do Brasil
