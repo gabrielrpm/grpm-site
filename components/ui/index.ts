@@ -1,0 +1,9 @@
+export { default as Gallery } from "./Gallery";
+export { default as Testimonials } from "./Testimonials";
+export { default as FAQ } from "./FAQ";
+export { default as StatsCounter } from "./StatsCounter";
+export { default as CookieBanner } from "./CookieBanner";
+export { default as FloatingWhatsApp } from "./FloatingWhatsApp";
+export { default as ContactForm } from "./ContactForm";
+export { default as Map } from "./Map";
+export { default as Partners } from "./Partners";
